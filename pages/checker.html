@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>GuideMe</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="stylesheet" href="../css/checker.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116318405-1"></script>
+    <script async src="../javascript/g-tracking.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__logo">
+                <!-- <ion-icon class="nav__icon" name="logo-dribbble"></ion-icon> -->
+                <h2 style="color: #ea4c89;font-size: 28px;">AI Career Guide</h2>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../Recommender.html" class="nav__link">Career Recommender</a></li>
+                    <li class="nav__item"><a href="../ai-assistant.html" class="nav__link">AI Guide</a></li>
+                    <li class="nav__item"><a href="../Contact-Us.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__item"><a href="../Aboutus.html" class="nav__link">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <ion-icon class="nav__icon" name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- Page content -->
+    <div class="app">
+        <div class="container">
+            <div class="app_container" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                <div class="app__inner">
+                    <div class="auth__media" style="display: flex;align-items: center;">
+                        <img src="../images/4.png">
+                    </div>
+                    <div class="app__main">
+                        <div class="text-container">
+                            <h2 class="app__main__title" style="font-family: 'Aclonica', sans-serif;color: #ea4c89;">Answer a few questions</h2>
+                            <br>
+                            <p class="page__header__subtitle" style="font-size:1.1rem;">So we can create a detailed learning profile for you and help you grow in the right career</p><br>
+                            <form id="question-form" action="#">
+                                <input id="index" value=" " hidden>
+                                <div id="question"></div>
+                                <div id="answers"></div>
+                                <button type="submit">Next</button>
+                            </form>
+                            <p><i>Total: 7 questions</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking Javascript -->
+    <script src="../javascript/app.min.js"></script>
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/checker.js"></script>
+</body>
+
+</html>

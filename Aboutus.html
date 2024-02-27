@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  background: #5800cd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border-radius: 20px;
+  height: 50vh;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="l-header">
+  <nav class="nav bd-grid">
+      <div class="nav__logo">
+          <!-- <ion-icon class="nav__icon" name="logo-dribbble"></ion-icon> -->
+          <h2 style="color: #ea4c89;font-size: 28px;">AI Career Guide</h2>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="../Recommender.html" class="nav__link">Career Recommender</a></li>
+              <li class="nav__item"><a href="ai-assistant.html" class="nav__link">AI Guide</a></li>
+              <li class="nav__item"><a href="../Contact-Us.html" class="nav__link">Contact Us</a></li>
+              <li class="nav__item"><a href="../Aboutus.html" class="nav__link">About Us</a></li>
+          </ul>
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+          <ion-icon class="nav__icon" name="menu"></ion-icon>
+      </div>
+  </nav>
+</header>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <!-- <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="us-images/IMG_20240112_0844571.jpg" alt="Jane" style="height: 70%;width: 100%;object-fit: cover;border-radius: 20px 20px 0px 0px;">
+      <div class="container">
+        <h2>Deivasigamani V</h2>
+        <p>Final CSE</p>
+        <p>deivasigamanivaradharaj@gmail.com</p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="us-images/IMG_20240112_084349.jpg" alt="Mike" style="height: 70%;width: 100%;object-fit:cover;border-radius: 20px 20px 0px 0px;">
+      <div class="container">
+        <h2>Gopi M</h2>
+        <p>Final CSE</p>
+        <p>gopimahesh@gmail.com</p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="height: 70%;width: 100%;object-fit: cover;border-radius: 20px 20px 0px 0px;">
+      <div class="container">
+        <h2>Sujithraj S</h2>
+        <p>Final CSE</p>
+        <p>sujithraje.com</p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
